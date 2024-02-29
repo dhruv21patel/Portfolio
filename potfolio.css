@@ -359,8 +359,9 @@ ul,li{
     
 }
 
-.cancel:hover , .cancel li:hover{
-    background: blue;
+.cancel:hover , .cancel i:hover{
+    color: white;
+    size: 1rem;
 }
 .sidebar-items{
     background: transparent;
