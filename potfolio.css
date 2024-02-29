@@ -1,0 +1,997 @@
+*{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    font-family: 'Caveat', cursive;
+    font-size: large;
+
+}
+
+body{
+    overflow:hidden;
+    width: 100svw;
+}
+
+div{
+    position: relative;
+}
+
+body div div{
+    overflow: scroll;
+}
+
+
+a:hover{
+    text-decoration: none;
+    color: grey;
+    font-size: 1.5rem;
+    transition:all 0.4s;
+}
+
+button:hover{
+    padding: 10px 23px 10px 23px;
+    transition: all 0.4s ease 0s;
+}
+
+.main{
+    width: 100%;
+}
+
+.navbar1 {
+    width: inherit;
+    height: fit-content !important;
+    margin: 0px !important;
+}
+
+.navbar1 div{
+    margin: 0px !important;
+    padding: 20px 20px 20px 20px !important;
+    height: fit-content !important;
+    width: 100%;
+}
+
+.navbar1 div p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar1 div button:hover{
+    padding: 5px 13px;
+    transform: translateX(-7x);
+    background-color: white;
+    color: green;
+}
+
+button{
+    color: whitesmoke;
+    background-color: rgb(106, 171, 8);
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 13px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width:1000px)
+{
+    #name div{
+        direction: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+
+
+    .card-container .card-wrapper{
+        height: auto !important;
+    }
+
+    .large-device{
+        display: none !important;
+    }
+
+    .sidebar-off{
+        display: none;
+    }
+
+    .knowledge{
+        min-width: 100% !important;
+    }
+
+    .small-card-container .moreproj{
+        width: 100% !important;
+    }
+    .small-card-container{
+        flex-direction: column !important;
+    }
+
+    .social{
+        flex-direction: row;
+    }
+
+    .social ul, .social ul li{
+        margin: 0px;
+        padding: 0px;
+        height: fit-content !important;
+        width: fit-content !important;
+    }
+
+    .sidepannel{
+        height: fit-content !important;
+        padding: 10px !important;
+    } 
+
+    .sidebar{
+        display: flex !important;
+    }
+
+    .social{
+        flex-direction: row !important; 
+    }
+
+    .social ul, .social ul li{
+        margin: 0px;
+        padding: 0px;
+        height: fit-content !important;
+        width: fit-content !important;
+    }
+
+    .popuptext p{
+        padding: 10px 20px 10px 20px !important;
+        background: transparent;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .all {
+       width: 100%;
+       margin: 0px;
+       padding: 0px;
+       padding-left: 0px;
+    }
+
+    .card-container .card-wrapper{
+        height: auto !important;
+    }
+
+    .large-device{
+        display: none !important;
+    }
+
+    .sidebar{
+        display: flex !important;
+    }
+
+    .sidebar-off{
+        display: none;
+    }
+
+    .ft{
+        margin-left: 0px;
+    }
+    .name{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .row{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+     
+    #name div{
+        direction: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    #name{
+        height: fit-content;
+    }
+
+    #name div div{
+        direction: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0%;
+        margin-left: auto;
+        margin-left: 0px;
+        position:relative; 
+        background: transparent; 
+        height: fit-content;
+        padding-top: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    #name div div button{
+        background-color: rgb(17, 239, 65);
+        color: lightgreen;
+    }
+
+    .all div{
+        height: fit-content;
+    }
+
+    .knowledge{
+        min-width: 100% !important;
+    }
+
+    .small-card-container .moreproj{
+        width: 100% !important;
+
+    }
+    .small-card-container{
+        flex-direction: column !important;
+    }
+
+    .sidepannel{
+        height: fit-content !important;
+        padding:10px !important;
+    } 
+
+    .social{
+        flex-direction: row !important; 
+    }
+
+    .social ul, .social ul li{
+        margin: 0px;
+        padding: 0px;
+        height: fit-content !important;
+        width: fit-content !important;
+    }
+
+    .popuptext p{
+        padding: 10px 20px 10px 20px;
+        background: transparent;
+    }
+}
+
+
+@media screen and (max-width : 1400px){
+    .card-container .card-wrapper{
+        height: auto !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+.social{
+    margin: 0px;
+    width: 250px;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: left;
+    padding: 0px;
+    gap: 60px;
+
+}
+
+.social li{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.special{
+    padding: 0px !important; 
+}
+
+p{
+    width: fit-content;
+}
+
+.sidepannel{
+    background-color: #14131a !important; 
+    width: fit-content;
+    height: 90%;
+    border-radius: 10px;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.large-device{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar{
+    height: 100%;
+    width: 100%;
+    display: none ;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin: 0px;
+}
+
+
+a{
+    text-decoration: none;
+    background: transparent;
+}
+
+ul,li{
+    width: 100%;
+    background: transparent;
+}
+
+
+
+.sidebar-off{
+    display: none;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.385);
+    box-shadow: -5px 0px 20px black;
+    backdrop-filter: blur(20px);
+    
+}
+
+.cancel:hover , .cancel li:hover{
+    background: blue;
+}
+.sidebar-items{
+    background: transparent;
+    line-height: 3em;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.sidebar-items li , .sidebar-items li a{
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: flex-start;
+    color: black !important;
+}
+i{
+    background: transparent !important;
+}
+ul li , ul li a {
+    background-color: #14131a;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(178, 184, 190);
+    height: fit-content;
+    width: fit-content;
+    list-style: none;
+    font-size: 0.8rem;
+}
+
+ul{
+    height: fit-content;
+    background-color: #14131a;
+}
+
+
+
+
+
+
+
+
+#name
+{
+    /* background: rgb(109,147,238);
+    background: linear-gradient(90deg, rgba(109,147,238,1) 0%, rgba(12,238,60,1) 100%); */
+    background-image: url("./images/beach-aerial-view-waves-ocean-macbook-pro-ios-11-mac-os-5120x2880-6422.jpg");
+    object-fit: fill;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+#mid img{
+    border-radius: 100px; 
+    z-index: 2;
+    width: 120px; 
+    height: 120px; 
+    border: 3px solid whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 8px 0px;
+    object-fit: cover;
+}
+
+#name div{
+    height: 100%; background: transparent; align-items: center;padding-inline: auto;padding: 10px;
+}
+
+.nameholder{
+    position:relative; background: transparent; width:80%; height:fit-content; margin-left: 30px;
+}
+
+.ft{
+    font-family: i-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    background: transparent;
+    width: fit-content; 
+    height:fit-content; 
+    margin-left: 30px; 
+    color: rgb(255, 255, 255); 
+    font-size: 1.3rem;
+}
+
+.all div{
+    height: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.card-container{
+     margin-top: 1%;
+     width: 100%;
+     height: fit-content !important;  
+     background: transparent;
+     margin: 0px;
+     padding: 0px;
+     gap: 20px;
+     padding: 20px;
+}
+
+.card-container .card-wrapper{
+    width: auto !important;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 0px;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.card{
+    border: 0px;
+    width: 100%;
+    height: 70% !important;
+    background-color: rgb(252, 1, 1);
+    border-radius: 0px !important;
+}
+
+.card img{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-text{
+    background-color: whitesmoke;
+    height: 30% !important;
+    width: 100% !important;
+    padding: 5px 15px 5px 15px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.card-text div
+{
+    background: transparent;
+    width: fit-content;
+    height: fit-content !important;
+}
+
+.card-text div p{
+    background: transparent;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content !important;
+} 
+
+
+.text p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.8rem;
+    margin: 0px;
+    color: rgb(131, 125, 125);
+
+}
+.text{
+    padding: 10px;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.small-card-container{
+    margin-top: 1%;
+    width: 100%;
+    height: fit-content;
+    background: transparent;
+    margin: 0px;
+    padding: 40px;
+    gap: auto;
+}
+
+
+.small-wrapper{ gap : 20px;
+border: 2px solid green;}
+
+.knowledge{
+    height: fit-content;
+    padding: 20px;
+    background:transparent;
+}
+
+.knowledge div p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.knowledge div{
+    height: fit-content;
+    width: 100%;
+}
+
+.small-card-wrapper{
+    width: 220px !important; 
+    height: auto !important;
+    border-radius: 15px;
+    padding: 0px 10px 5px 10px;
+    justify-content: center;
+    background-color: #14131a;
+}
+
+.small-card-wrapper p{
+    background: transparent;
+    padding: 20px 20px 0px 10px;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(108, 105, 105) !important;
+}
+
+.card-all{
+    background: transparent;
+    padding: 20px 10px 10px 15px;
+    gap: 10px;
+}
+
+.card-all div{
+    background: linear-gradient(to right, red, purple);
+    width: fit-content;
+    height: fit-content;
+    padding: 1px;
+    margin: 0px;
+    border-radius: 2px;
+}
+
+
+.grad-bord p{
+    height: fit-content;
+    width: fit-content;
+    padding: 2px 5px 2px 5px !important;
+    margin: 0px !important;
+    background-color: #14131a ;
+    font-size: 0.7rem !important;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.small-card-container .moreproj{
+    height: auto !important;
+    border-radius: 20px;
+}
+
+.moreproj{
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+    background-color: #14131a !important;
+}
+.proj-wrapper{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.proj-wrapper p{
+    height: fit-content;
+    width: fit-content;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    background: transparent;
+    margin: 0px;
+}
+
+.projects{
+    background: transparent;
+    padding: 10px 15px 10px 15px;
+    width: 100%;
+    gap: 10px;
+}
+
+.icon1{
+    justify-content: space-between !important;
+    background: transparent;
+    overflow: hidden;
+}
+
+.icon1 div p{
+    color: #666667;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
+    background: transparent !important;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.icon1 div{
+    background: transparent;
+    margin: 0px;
+    padding: 0px 10px 0px 10px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.icon1 a{
+    background: transparent !important;
+    height: auto;
+    width: fit-content;
+    text-decoration: none;
+}
+
+i{
+    background: transparent;
+}
+
+
+
+
+
+.popupview{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    opacity: 0;
+    align-items: center;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.popupview .popuptext{
+    width: 60%;
+    height: auto;
+    background-color: white;
+}
+
+.popuptext div{
+    width: 100%;
+    height: fit-content;
+    background: transparent;
+    padding: 10px;
+}
+
+.popuptext div i{
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.popuptext p{
+    padding: 40px 80px 40px 80px;
+    background: transparent;
+}
+
+.popupview.active{
+    opacity: 0.9;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+/* progress barrr */
+
+.progressbar-container{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(48, 47, 47, 0.385);
+    color: rgba(132, 131, 131, 0.559);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(60px) !important;
+    margin-right: 20px;
+}
+
+.p-container{
+    width: 100%;
+    height: fit-content;
+    padding: 0px;
+    background: transparent;
+}
+
+.language-progressbar{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background: transparent;
+}
+
+.language-progressbar span p,.progressbar-container span h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.language-progressbar .bar-python,
+.language-progressbar .bar-java,
+.language-progressbar .bar-html,
+.language-progressbar .bar-css,
+.language-progressbar .bar-script,
+.language-progressbar .bar-framework{
+    height: fit-content;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px dotted white;
+    border-style: none;
+    background: transparent;
+    display: flex;
+    align-items:center ;
+    
+}
+
+.progressbar-container span h1,.progressbar-container span,.language-progressbar span,.language-progressbar span p{
+    background: transparent;
+}
+
+
+.bar-python span,
+.bar-java span,
+.bar-html span,
+.bar-css span,
+.bar-script span,
+.bar-framework span  {
+    margin: 0px;
+    width: 0%;
+    padding: 0%;
+    overflow: hidden;
+    font-size: 15px;
+    border: 0.2px dotted grey;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+
+}
+
+.bar-python span{
+    background-color: rgba(253, 65, 65, 0.641);
+}
+.bar-java span{
+    background-color: rgba(229, 255, 0, 0.601);
+
+}
+.bar-html span{
+    background-color: rgba(128, 0, 100, 0.636);
+
+}
+.bar-css span{
+    background-color: rgba(141, 255, 47, 0.615);
+
+}
+.bar-script span{
+    background-color: rgba(255, 153, 0, 0.704);
+
+}
+.bar-framework span{
+    background-color: rgba(0, 255, 251, 0.59);
+} 
+
+.animate-1{
+    animation: rocket-1 2s linear forwards;
+}
+.animate-2{
+    animation: rocket-2 2s linear forwards;
+}
+.animate-3{
+    animation: rocket-3 2s linear forwards;
+}
+.animate-4{
+    animation: rocket-4 2s linear forwards;
+}
+.animate-5{
+    animation: rocket-5 2s linear forwards;
+}
+.animate-6{
+    animation: rocket-6 2s linear forwards;
+}
+
+
+
+.bar-python span i,
+.bar-java span i,
+.bar-html span i,
+.bar-css span i,
+.bar-script span i,
+.bar-framework span i {
+    display: flex;
+    transform: rotate(90deg);
+    width: fit-content;
+    float: right;
+    padding: 0%;
+    color: whitesmoke;
+    font-size: 10px;
+}
+
+@keyframes rocket-1 {
+    10%{
+        width: 10%;
+    }
+    25%
+    {
+        width: 25%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 75%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+
+@keyframes rocket-2 {
+    10%{
+        width: 10%;
+    }
+    25%
+    {
+        width: 25%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 75%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+@keyframes rocket-3 {
+    10%{
+        width: 10%;
+    }
+    25%
+    {
+        width: 25%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 75%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+@keyframes rocket-4 {
+    10%{
+        width: 10%;
+    }
+    25%
+    {
+        width: 25%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 75%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+@keyframes rocket-5 {
+    10%{
+        width: 10%;
+    }
+    25%
+    {
+        width: 25%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 55%;
+    }
+    100%{
+        width: 60%;
+    }
+    
+}
+@keyframes rocket-6 {
+    10%{
+        width: 10%;
+    }
+    25%
+    {
+        width: 25%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 75%;
+    }
+    100%{
+        width: 80%;
+    }
+    
+}

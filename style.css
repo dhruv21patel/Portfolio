@@ -1,0 +1,127 @@
+*{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body{
+  width: 100%;
+  height: 100% !important;
+  overflow: scroll;
+}
+
+.bg-image{
+  background-image: url("./contact/4k\ 1080P\,\ 2K\,\ 4K\,\ 5K\ HD\ wallpapers\ free\ download.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  box-shadow: 0px 0px 15px 15px black;
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: blur(0px) !important;
+  -webkit-filter: blur(0px) !important;
+}
+
+
+/* swiper css */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* end of swiper css */
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+.collage-container{
+  object-fit: cover;
+  opacity: 1!important;
+  padding: 0px;
+}
+
+.collage-container img{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+.collage-detail-container{
+  background-color: aliceblue;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+.collage-detail-container div{
+  height: fit-content;
+  width: auto;
+  padding: 50px;
+}
+
+.heading{
+  object-fit: contain;
+  mix-blend-mode:darken;
+}
+
+.heading img{ 
+  z-index: 2;
+  width: 80px; 
+  height: 100px; 
+  object-fit: contain;
+}
+
+.heading div{
+  justify-content: center;
+  align-items: center;
+  padding: 0px 5px 0px 5px;
+}
+
+.heading div p{
+  font-size: 2rem;
+  font-family: 'Sen', sans-serif;
+}
+
+.details p{
+  font-family: 'Allura', cursive;
+}
+
+#size{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width:1000px) {
+
+  .collage-container{
+    height: 0px!important;
+    width: 0px !important;
+  }
+  
+}
