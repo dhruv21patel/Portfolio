@@ -129,10 +129,11 @@ button{
     .sidepannel{
         height: fit-content !important;
         padding: 10px !important;
-    } 
+        } 
 
     .sidebar{
         display: flex !important;
+        background-color: aliceblue;
     }
 
     .social{
@@ -151,9 +152,20 @@ button{
         background: transparent;
     }
 
+    .sidebar .svg{
+        display:block !important;
+        height: 60px;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
+    
+    .sidebar .svg{
+        display:block !important;
+        height: 60px;
+    }
+    
     .all {
        width: 100%;
        margin: 0px;
@@ -171,6 +183,7 @@ button{
 
     .sidebar{
         display: flex !important;
+        background-color: aliceblue;
     }
 
     .sidebar-off{
@@ -278,7 +291,16 @@ button{
 
 
 
+.svg{
+    mix-blend-mode: multiply;
+    display: none;
+}
 
+
+.small-device-icon{
+    mix-blend-mode:exclusion;
+    padding: 10px;
+}
 
 .social{
     margin: 0px;
@@ -307,7 +329,7 @@ p{
 }
 
 .sidepannel{
-    background-color: #14131a !important; 
+    background-color: #14131a ; 
     width: fit-content;
     height: 90%;
     border-radius: 10px;
@@ -326,8 +348,9 @@ p{
     width: 100%;
     display: none ;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-right: 20px;
+    padding-left: 20px;
     margin: 0px;
 }
 

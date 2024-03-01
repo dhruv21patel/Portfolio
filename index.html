@@ -100,13 +100,37 @@
                         </li>
                         
                     </ul>
-                    <ul class="sidebar">
+                    <ul class="sidebar" >
+                        <li style="display:flex; justify-content: flex-start;" class="svg"><img id="img" src="" alt=""></li>
                         <li onclick="opensidebar()" class="small-device-icon"><i class="ri-menu-line"></i></li>
                     </ul>
                     
                     <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
                     <script>
+
+                        window.onload = function() {
+                                    changesvg();
+                                };
+
+                        var i =2;
+                        function changesvg(){
+                            if(i >4)
+                            {
+                                i=2;
+                            }
+                            const svg = document.getElementById('img');
+                            setTimeout(function(){
+                                svg.style.opacity = 0;
+                            },1000);
+
+                            svg.src = "./images/Frame "+i+".svg";
+                            setTimeout(function(){svg.style.opacity=0.5},1000);
+                            i++;
+                            setTimeout(function(){svg.style.opacity=1},1000);
+                            setTimeout(changesvg,2000);
+                            
+                        }
 
                         function opensidebar(){
                             const sidebar = document.querySelector('.sidebar-off');
