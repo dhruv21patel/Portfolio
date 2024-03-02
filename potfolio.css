@@ -19,9 +19,6 @@ div{
     position: relative;
 }
 
-body div div{
-    overflow: scroll;
-}
 
 
 a:hover{
