@@ -285,6 +285,12 @@ button{
     }
 }
 
+@media screen and (min-width : 1600px) {
+    *{
+        overflow-x:hidden ;
+    }
+    }
+
 
 
 
