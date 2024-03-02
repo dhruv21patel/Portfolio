@@ -19,7 +19,9 @@ div{
     position: relative;
 }
 
-
+.all{
+    overflow-x: hidden;
+}
 
 a:hover{
     text-decoration: none;
@@ -281,15 +283,6 @@ button{
         height: auto !important;
     }
 }
-
-@media screen and (min-width : 1600px) {
-    *{
-        overflow-x:hidden ;
-    }
-    }
-
-
-
 
 
 
